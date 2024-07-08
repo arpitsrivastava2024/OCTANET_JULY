@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Business Near You</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section id="header">
+    <div class="logo">
+        <img src="Img/b.jpeg" alt="">
+    </div>
+    <ul id="navbar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-translate nav"
+        viewBox="0 0 16 16">
+        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
+        <path
+          d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
+      </svg>
+      <div id="sign-in">
+        <button class="button">Sign In</button>
+      </div>
+      <select>
+        <option>English - EN</option>
+        <option>हिंदी - HI</option>
+        <option>मराठी - MR</option>
+        <option>বেঙ্গলি - BN</option>
+        <option>ગુજરાતી - GU</option>
+        <option>ಕನ್ನಡ - KN</option>
+        <option>தமிழ் - TA</option>
+      </select>
+      <div id="none">
+      <li><a href="#">We are Hiring</a></li>
+    </div>
+    <div id="nav">
+      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-megaphone" viewBox="0 0 16 16">
+        <path
+          d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z" />
+      </svg>Advertise</a></li>
+    </div>
+      <li><a href="#">Investor Relations</a></li>
+      
+      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5" />
+          </svg>Free Listing</a></li>
+          <div id="message">
+      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="bi bi-bell" viewBox="0 0 16 16">
+            <path
+              d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+          </svg></a></li></div>
+      <button>Login/Sign Up</button>
+    </ul>
+    </div>
+  </section>
+
+  <section id="investor-hero">
+    <h2>To provide fast, free, reliable and comprehensive information to users and enable discovery and transactions for products and services.</h2>
+  </section>
+
+<div class="highlight">
+  <h2>Key <span>Highlights</span> </h2>
+</div>
+
+<div id="key">
+<div class="rating">
+    <i class="fa-solid fa-people-roof"></i>
+    <h2>171.1 million</h2>
+    <h3>Quarterly unique visitors in Q4-FY24</h3>
+</div>
+<div class="rating">
+    <i class="fa-solid fa-list-check"></i>
+    <h2>43.6 million</h2>
+    <h3>Listings as of March 31, 2024</h3>
+</div>
+<div class="rating">
+    <i class="fa-solid fa-bullhorn"></i>
+    <h2>583,690</h2>
+    <h3>Active paid campaigns as of March 31, 2024</h3>
+</div>
+<div class="rating">
+    <i class="fa-solid fa-star"></i>
+    <h2>148 million</h2>
+    <h3>Reviews and ratings as of March 31, 2024</h3>
+</div>
+<div class="rating">
+    <i class="fa-regular fa-map"></i>
+    <h2>250+ cities</h2>
+    <h3>Across India</h3>
+</div>
+<div class="rating">
+    <i class="fa-solid fa-hotel"></i>
+    <h2>MSMEs</h2>
+    <h3>Attractive value proposition for</h3>
+</div>
+</div>
+
+<div class="about-sec">
+<h2>About Apnadealer</h2>
+<p>Apna Dealer offers a vast array of listings, neatly organized for easy navigation, ensuring you find what you need without hassle.
+  We partner with reputable dealerships, guaranteeing quality vehicles and services every time you browse through our platform.
+  From cars and trucks to motorcycles and RVs, Apna Dealer boasts an extensive selection, catering to every automotive need and preference.
+  Our intuitive interface makes searching for your desired vehicle a breeze, with advanced filters to refine your search results.
+  Apna Dealer provides detailed information about each listing, including specifications, pricing, and seller contact details, empowering you to make informed decisions.
+  Customize your search preferences and receive tailored recommendations based on your interests and browsing history.</p>
+  <p>Rest assured that your transactions are safe and secure with Apna Dealer's trusted payment gateway and encryption protocols.
+    Connect with sellers and dealerships instantly through our messaging feature, facilitating smooth communication and negotiation.
+    Stay up-to-date with the latest listings and market trends, ensuring you never miss out on the perfect opportunity.
+    Access Apna Dealer anytime, anywhere, with our mobile-responsive website and dedicated app, available for both iOS and Android devices.
+     Join a vibrant community of automotive enthusiasts, sharing insights, experiences, and tips on our interactive forums.
+    Benefit from authentic reviews and ratings from fellow users, helping you gauge the reliability and reputation of sellers and dealerships.</p>
+</div>
+
+  <footer>
+    <div class="footer">
+      <div class="contact">
+        <span>Follow Us On</span>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-facebook" viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+          </svg></a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-youtube" viewBox="0 0 16 16">
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+          </svg></a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-instagram" viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+          </svg></a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+          </svg></a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+          </svg></a>
+        <div class="download">
+          <a href=""><img src="Img/play.jpg" alt=""></a>
+          <a href=""><img src="Img/app1.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="fbox-2">
+      One-Stop for All Local Businesses, Services, & Stores Nearby Across India
+    </h1>
+
+    <p id="fbox-3">
+      Welcome to Apnadealer, your 'one stop shop' where you are assisted with day-to-day and exclusive planning and
+      purchasing activities. We take pride in our iconic customer support number, 0000000000 and the fact that we own a
+      strong hold on local business information pan India
+    </p>
+
+    <p id="fbox-4">
+      Our service extends from providing address and contact details of business establishments around the country, to
+      making orders and reservations for leisure, medical, financial, travel and domestic purposes. We enlist business
+      information across varied sectors like Hotels, Restaurants, Auto Care, Home Decor, Personal and Pet Care, Fitness,
+      Insurance, Real Estate, Sports, Schools, etc. from all over the country. Holding information right from major
+      cities like Mumbai, Delhi, Bangalore, Hyderabad, Chennai, Ahmedabad and Pune our reach stretches out to other
+      smaller cities across the country too.
+    </p>
+
+    <p id="fbox-5">
+      Our 'Free Listing' feature gives a platform to showcase varied specialities. We then furnish you with the
+      information via phone, SMS, web, App and WAP as well as, create a space for you to share your experiences through
+      our 'Rate & Review' feature. Through the 'Best Deals', 'Last Minute Deals' and 'Live Quotes', we make sure that
+      you are offered the best bargains in the market.
+    </p>
+
+    <div id="fbox-6">
+      Some of our services that will prove useful to you on a day-to-day basis are :
+    </div>
+
+    <div id="fbox-main">
+      <div class="fbox-7">
+        <div class="footer-box">
+          <i class="fa-solid fa-handshake-angle"></i>
+          <a href="">B2B</a>
+          <div>
+            <p>Experience the ultimate B2B portal by Justdial. You can explore countless diverse categories, innumerable
+              top-quality vendors, and an unmatched wholesale experience. You'll find everything you need for B2B
+              requirements on this exclusive platform. Our interactive interface allows you to apply relevant filters,
+              ascertain the best rates, and get instant assistance via chat.</p>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <i class="fa-regular fa-map"></i>
+          <a href="">All India</a>
+          <div>
+            <p>Elevate your search for B2B requisites. From lead generation to promoting and selling products/services,
+              Justdial enables enterprises to reach vast audiences all across India. Embracing digital strategies,
+              Justdial India encompasses manufacturers, dealers, suppliers, vendors, wholesalers, and more, offering
+              convenience in the B2B market space and empowering businesses nationwide.</p>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <i class="fa-solid fa-box"></i>
+          <a href="">
+            Packers and Movers</a>
+          <div>
+            <p>If you’re relocating to another place, or even if you just want to send some belongings elsewhere, find
+              the best deals on the most reliable packers and movers for your location. Get quotes from multiple
+              agencies, read reviews from previous customers, and check ratings before making a selection for a
+              hassle-free experience.</p>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <i class="fa-solid fa-utensils"></i>
+          <a href="">
+            Order Food Online</a>
+          <div>
+            <p>You are just three clicks away from placing an order and exploring a wide range of exotic cuisines. Order
+              food online with Justdial and get your favourite food delivered at your doorstep. Search for restaurants,
+              view reviews and ratings, avail discounts and order your food.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fbox-main">
+      <div class="fbox-7">
+        <div class="footer-box">
+          <i class="fa-solid fa-briefcase"></i>
+          <a href="">
+            Jobs</a>
+          <div>
+            <p>Providing pertinent jobs to job seekers and relevant profiles to employers, this service will help you
+              reach out to employers and vice-versa across industry verticals, experience levels and geographies.</p>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <i class="fa-solid fa-film"></i>
+          <a href="">Movies</a>
+          <div>
+            <p>This gives you access to book tickets and keep updated with the latest movies. With the provision of a
+              synopsis, cast, crew and trailer, you can make a better choice in the movie you would like to watch.</p>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <i class="fa-solid fa-spa"></i>
+          <a href="">
+            Spa & Salon</a>
+          <div>
+            <p>Skip the wait to get pampered at a spa or a salon. In a few clicks, 'Book an Appointment' online through
+              Justdial before your next visit.</p>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <a href="">
+            Repair & Services</a>
+          <div>
+            <p>Find the 'Best Deal', be it for repairing your air-conditioner, getting your car serviced or cleaning
+              your water purifier and drive your utility problems away.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fbox-main">
+      <div class="fbox-7">
+        <div class="footer-box">
+          <i class="fa-solid fa-stethoscope"></i>
+          <a href="">Doctor Appointment</a>
+          <div>
+            <p>Find the suitable medical specialist to take care of your health and well-being. Healthcare made easy.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <i class="fa-solid fa-sign-hanging"></i>
+          <a href="">Real Estate Agents</a>
+          <div>
+            <p>Discover the power of our cohesive platform for simplified property searches. Whether your interest lies
+              in PG, rentals, buying, or selling, you can connect with trusted agents and developers and stay updated on
+              upcoming or trending residential and commercial projects.</p>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <i class="fa-brands fa-amazon-pay"></i>
+          <a href="">
+            Online Recharge/Bill Payment</a>
+          <div>
+            <p>With the help of this service you can stay on track in making your bill payments and recharges without
+              having to wait in a queue. This includes bill payments for gas, electricity, data card, DTH, landline,
+              etc.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p id="fbox-5">Some of the other services that can be of assistance to you for leisure, health and home convenience
+      are - Pest Control, Skin Care Clinics, Painters, Laundry Services, Interior Designers, Mobile Phone Repair,
+      Vaccination Centres, Internet Service Providers, etc. With an endless number of things under the sun, you can be
+      sure this will be your 'One Stop Shop' to find everything and more.</p>
+
+    <h1 id="fbox-2">Popular Categories</h1>
+
+    <p id="fbox-8"><a href="">Body Massage Centres |</a> <a href="">Cinema Halls |</a> <a href="">Schools |</a> <a
+        href="">Beauty Spas |</a> <a href="">Dermatologists |</a> <a href="">Hospitals |</a> <a href="">Malls |</a> <a
+        href="">Gyms |</a> <a href="">Beauty Parlours |</a> <a href="">Estate Agents |</a> <a href="">Banquet Halls
+        |</a> <a href="">ENT Doctor |</a> <a href="">Book Shops |</a> <a href="">Bike On Rent |</a> <a
+        href="">Sexologist Doctors|</a> <a href="">Neurologists |</a> <a href="">Gastroenterologists |</a> <a
+        href="">Car Rental |</a> <a href="">Salons |</a>
+      <a href="">Gynaeologist & Obstetrician Doctors |</a> <a href="">Courier Services |</a> <a href="">Dance Classes
+        |</a> <a href="">Pathology Labs |</a> <a href="">Train Ticket Boking Agents |</a> <a href=""> Taxi Services
+        |</a> <a href="">Cake Shops |</a> <a href="">AC Repair & Services |</a> <a href="">Travel
+        Agents |</a> <a href=""> Mobile Phone Dealers |</a> <a href=""> Pet Shops |</a> <a href="">Packers And Movers
+        |</a> <a href="">Paying Guest Accomodations |</a> <a href="">Psychiatrists |</a> <a href="">Dmart |</a> <a
+        href=""> Dharamshalas |</a> <a href="">General Physician Doctors |</a> <a href="">Urologist Doctors |</a> <a
+        href="">Bakeries |</a> <a href="">Bicycle Dealers |</a> <a href="">Dentists |</a> <a href="">Coffee Shops |</a>
+      <a href="">Paediatricians |</a> <a href="">Sonography Centres |</a> <a href="">Orthopaedic Docotors |</a> <a
+        href="">Yoga Classes |</a> <a href="">Hostels |</a> <a href="">Cardiologists |</a> <a href="">Chemists |</a>
+      <a href="">Electrical Shops |</a> <a href="">Skin Care Clinics |</a> <a href=""> Diagnostic Centres |</a> <a
+        href="">Motor Training School |</a> <a href="">Homeopathic Doctors |</a> <a href="">Physio therapists|</a> <a
+        href="">Photo Studios |</a> <a href="">Music Classes |</a> <a href="">Electricians |</a> <a href=""> Sports
+        Goods Dealers |</a> <a href="">Shoe Dealers |</a> <a href="">Hair Stylists |</a> <a href="">Gift Shops |</a> <a
+        href="">Ophthalmologists |</a> <a href="">Car Repair & Services |</a> <a href="">Ayurvedic Doctors |</a> <a
+        href="">Eye Clinics |</a> <a href=""> Restaurants |</a> <a href="">Carpenters |</a> <a href="">Jewellery
+        Showrooms |</a> <a href="">Cooks On Hire |</a> <a href="">Stationery Shops |</a> <a href=""> Nephrologists |</a>
+      <a href="">Caterers |</a> <a href="">Interior Designers |</a> <a href="">Rehabilitation Center |</a> <a
+        href="">Drug De Addiction Center |</a> <a href="">Grocery Stores |</a> <a href="">Banks |</a> <a href="">ATM
+        |</a> <a href="">5 Star Hotels|</a> <a href="">Hotels |</a> <a href="">Resorts |</a> <a href=""> Plastic
+        Surgeons </a>
+    </p>
+
+    <h1 id="fbox-2">Popular Cities</h1>
+
+    <p id="fbox-8">
+      <a href="">Delhi |</a><a href="">Mumbai |</a><a href="">Bangalore |</a><a href="">Hyderabad |</a><a
+        href="">Chennai |</a><a href="">Pune |</a><a href="">Ahmedabad |</a><a href="">Indore |</a><a href="">Kanpur
+        |</a><a href="">Aurangabad-Maharashtra |</a><a href="">Gorakhpur |</a><a href="">Gwalior |</a><a
+        href="">Jalandhar |</a><a href="">Kolkata |</a><a href="">Patna |</a><a href="">Nashik |</a><a href="">Mysore
+        |</a><a href="">Jabalpur |</a><a href="">Guwahati |</a><a href="">Jodhpur |</a><a href="">Jaipur|</a><a
+        href="">Nagpur |</a><a href=""> Varanasi |</a><a href="">Dehradun |</a><a href="">Thiruvananthapuram |</a><a
+        href="">Thrissur |</a><a href="">Kolhapur |</a><a href="">Chandigarh |</a><a href="">Ernakulam |</a><a
+        href="">Visakhapatnam |</a><a href="">Allahabad |</a><a href="">Ranchi |</a><a href="">Goa |</a><a href="">Salem
+        |</a><a href="">Coimbatore |</a><a href="">Bhopal |</a><a href="">Rajkot |</a><a href="">Meerut |</a><a
+        href="">Bhubaneshwar |</a><a href="">Vijayawada |</a><a href="">Madurai |</a><a href="">Lucknow |</a><a href="">
+        Vadodara |</a><a href="">Raipur-Chhattisgarh |</a><a href="">Mangalore |</a><a href="">Trichy |</a><a
+        href="">Agra |</a><a href="">Kozhikode |</a><a href="">Surat |</a><a href="">Ludhiana |</a> <a href="">Hazaribagh</a>
+    </p>
+
+    <div id="fbox-9">
+    <h2 class="quick-links">Quick Links</h2>
+    <ul>
+    <li><a href="">About us</a></li>
+    <li><a href="">Investor Relations</a></li>
+    <li><a href="">We're hiring</a></li>
+    <li><a href="">Customer Care</a></li>
+    <li><a href="">Free Listing</a></li>
+    <li><a href="">What's New</a></li>
+    <li><a href="">Report a Bug</a></li>
+    <li><a href="">B2B Sitemap</a></li>
+    <li><a href="">Sitemap</a></li>
+    <li><a href="">Advertise</a></li>
+    <li><a href="">Media</a></li>
+    <li><a href="">Testimonials</a></li>
+    <li><a href="">Feedback</a></li>
+    <li><a href="">Business Badge</a></li>
+    <li><a href="">Jd Collection</a></li>
+    <li><a href="">Client Success Videos</a></li>
+    <li><a href="">B2B India Sitemap</a></li>
+  </ul>
+</div>
+
+<p id="fbox-5">Copyrights 2024. All Rights Reserved Privacy | Terms | Infringement</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
